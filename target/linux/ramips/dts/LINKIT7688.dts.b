@@ -82,7 +82,7 @@
 				factory: partition@40000 {
 					label = "factory";
 					reg = <0x40000 0x10000>;
-					read-only;
+					//read-only;
 				};
 
 				partition@50000 {
@@ -113,7 +113,7 @@
 		};
 
 		pwm@5000 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
@@ -148,7 +148,7 @@
 		#size-cells = <0>;
 		poll-interval = <20>;
 		wps {
-			label = "wps";
+			label = "reset";
 			gpios = <&gpio1 6 1>;
 			linux,code = <0x211>;
 		};
@@ -178,7 +178,7 @@
 			linux,code = <0x104>;
 		};
 		BTN_5 {
-			label = "BTN_5";
+			label = "S9";
 			gpios = <&gpio0 19 1>;		//GPIO19-S9
 			linux,code = <0x105>;
 		};
