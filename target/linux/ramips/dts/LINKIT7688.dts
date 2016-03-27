@@ -113,7 +113,7 @@
 		};
 
 		pwm@5000 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
